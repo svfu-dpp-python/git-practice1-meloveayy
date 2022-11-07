@@ -8,10 +8,10 @@ def change_label():
 
 
 win = Tk()
-win.title("Учебный пример")
+win.title("Example")
 win.geometry("400x300")
 
-text = "Привет, всем!"
+text = "Hello, world!"
 font = ('Arial', 30)
 label = Label(win, text=text, font=font)
 label.pack(pady=10)
@@ -20,7 +20,7 @@ font = ('Arial', 14)
 entry = Entry(win, font=font)
 entry.pack(pady=10)
 
-text = "Нажми меня"
+text = "Press me"
 font = ('Arial', 14)
 button = Button(win, text=text, font=font, command=change_label)
 button.pack(pady=10)

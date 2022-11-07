@@ -1,13 +1,21 @@
+from tkinter import Widget
 from unittest import TestCase
-from main import button, entry, label, win
+
+from main import button, label, win
+
+
+def get_text(widget: Widget):
+    config = widget.config()
+    return config['text'][4]
 
 
 class TestPractice(TestCase):
-    def test_buttons_master_is_win(self):
-        self.assertIs(button.master, win)
 
-    def test_entrys_master_is_win(self):
-        self.assertIs(entry.master, win)
+    def test_win_title(self):
+        self.assertEqual(win.title(), "Учебный пример")
 
-    def test_labels_master_is_win(self):
-        self.assertIs(label.master, win)
+    def test_label_text(self):
+        self.assertEqual(get_text(label), "Привет!")
+
+    def test_button_text(self):
+        self.assertEqual(get_text(button), "Нажми меня")
