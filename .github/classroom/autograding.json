@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Testing",
+      "setup": "sudo apt-get update && sudo apt-get install -y python3-tk",
+      "run": "python .github/classroom/autograding.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
