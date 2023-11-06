@@ -4,7 +4,7 @@ from tkinter.ttk import Entry
 
 def change_label():
     name = entry.get()
-    label.config(text=f"Привет, {name}!")
+    label.config(text=f"Hello, {name}!")
 
 
 win = Tk()
